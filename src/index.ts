@@ -18,7 +18,7 @@ async function onStart(): Promise<any> {
 
 const currentServer = https.createServer(
   {
-    cert: fs.readFileSync(`${__dirname}/../server.cert`, 'utf8'),
+    cert: fs.readFileSync(`${__dirname}/../server.crt`, 'utf8'),
     key: fs.readFileSync(`${__dirname}/../server.key`, 'utf8'),
   },
   server,
