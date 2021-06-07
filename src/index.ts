@@ -4,7 +4,7 @@ import config from '~/config'
 import { getConnection } from './packages/database'
 import server from './server'
 
-const PORT = process.env.SERVER_PORT || 8080
+const PORT = parseInt(process.env.SERVER_PORT, 0) || 8080
 
 async function onStart(): Promise<any> {
   try {
@@ -24,6 +24,6 @@ const currentServer = https.createServer(
   server,
 )
 
-currentServer.listen(PORT, onStart)
+currentServer.listen(PORT, '0.0.0.0', null, onStart)
 console.log(process.env)
 console.log(`Server up and running on https://localhost:${PORT}`)
