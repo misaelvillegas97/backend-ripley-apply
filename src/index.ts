@@ -24,6 +24,6 @@ const currentServer = https.createServer(
   server,
 )
 
-currentServer.listen(PORT, '0.0.0.0', null, onStart)
+currentServer.listen(PORT, '0.0.0.0', onStart)
 console.log(process.env)
 console.log(`Server up and running on https://localhost:${PORT}`)
