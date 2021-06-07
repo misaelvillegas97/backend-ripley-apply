@@ -16,6 +16,11 @@ const connectionOptions: ConnectionOptions = {
   synchronize: false,
   type: 'postgres',
   username: config.DB.USER,
+  extra: {
+    ssl: {
+      rejectUnauthorized: false,
+    },
+  },
 }
 
 module.exports = connectionOptions

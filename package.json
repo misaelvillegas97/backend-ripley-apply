@@ -7,6 +7,7 @@
     "lint": "eslint . --ext .ts",
     "migration:create": "NODE_ENV=local && npm run typeorm -- migration:create -n transfers",
     "setup:local": "NODE_ENV=local npm run typeorm -- migration:run",
+    "setup": "NODE_ENV=local npm run typeorm -- migration:run",
     "setup:test": "NODE_ENV=test && npm run typeorm -- migration:run",
     "test": "NODE_ENV=test && jest -i",
     "test:coverage": "NODE_ENV=test && jest --coverage",
