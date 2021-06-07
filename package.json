@@ -12,7 +12,7 @@
     "test": "NODE_ENV=test && jest -i",
     "test:coverage": "NODE_ENV=test && jest --coverage",
     "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
-    "start": "NODE_TLS_REJECT_UNAUTHORIZED=0 ts-node -r tsconfig-paths/register src/index.ts"
+    "start": "ts-node -r tsconfig-paths/register src/index.ts"
   },
   "dependencies": {
     "@hapi/joi": "17.1.1",
