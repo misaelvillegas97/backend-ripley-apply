@@ -19,6 +19,7 @@ const connectionOptions: ConnectionOptions = {
   extra: {
     ssl: {
       rejectUnauthorized: false,
+      ca: process.env.CACERT,
     },
   },
 }
