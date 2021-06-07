@@ -3,5 +3,5 @@
   "ext": "ts",
   "ignore": ["__tests__/**/*.(spec|test).ts"],
   "quiet": true,
-  "exec": "set NODE_ENV=local & ts-node -r tsconfig-paths/register src/index.ts"
+  "exec": "NODE_ENV=local ts-node -r tsconfig-paths/register src/index.ts"
 }
